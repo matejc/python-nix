@@ -1,0 +1,35 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "0.1",
+        "title": "python-nix.api"
+    },
+    "definitions": {
+        "Profile": {
+            "type": "object",
+            "properties": {
+                "uuid": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "paths": {
+        "/api/things": {
+            "get": {
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "lala",
+                        "schema": {
+                            "$ref": "#/definitions/Profile"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
